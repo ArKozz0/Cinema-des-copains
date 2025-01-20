@@ -42,37 +42,32 @@ body {
 }
 
 .affiches {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);  /* 5 colonnes égales */
+  gap: 50px;
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
   }
 
   .affiche {
-    background-color: #444;
-    padding: 15px 20px 160px 20px; 
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
+    text-align: center;
   }
 
   .affiche img {
+
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
+    height: auto;
+    border-radius: 8px;
   }
 
   .affiche-info {
     padding: 10px;
     text-align: center;
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 200;
     font-style: normal;
     color: white;
     display: flex;
@@ -87,7 +82,7 @@ body {
   }
 
   .affiche-info button {
-    background-color: #353535;
+    background-color: #d40404;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -100,7 +95,8 @@ body {
   }
 
   .affiche-info button:hover {
-    background-color: #555;
+    background-color: #ffffff;
+	  color: rgb(253, 0, 0);
   }
 
   
