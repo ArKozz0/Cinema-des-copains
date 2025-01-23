@@ -16,10 +16,6 @@ Faites un fork de ce dépot puis clonez le grâce à la commande :
 
 git clone https://github.com/votre-utilisateur/Cinema-des-copains.git
 
-Accédez au répertoire du projet :
-
-cd Cinema-des-copains
-
 Modifiez le fichier cle-api.js dans le répertoire main/asset avec le contenu suivant :
 
 export const apiKey = "VOTRE_API_KEY";
