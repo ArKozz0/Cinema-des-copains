@@ -63,6 +63,10 @@ body {
     border-radius: 8px;
   }
 
+  .affiche img:hover {
+    transform: scale(1.1);
+  }
+
   .affiche-info {
     padding: 10px;
     text-align: center;

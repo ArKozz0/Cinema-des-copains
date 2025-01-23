@@ -1,5 +1,6 @@
+import { apiKey } from './cle-api.js';
+
 $(document).ready(function () {
-  const apiKey = '3000a7d408341cdad51e422e585eb32d';
   let pageActuel = 1; 
   let rechercheActuel = ''; 
   let enChargement = false; 
@@ -21,15 +22,23 @@ $(document).ready(function () {
 
   function renderAffiches(data, append = false) {
     const $affichesDiv = $('.affiches');
-    if (!append) $affichesDiv.empty(); 
+    if (!append) $affichesDiv.empty();
     if (data.length === 0) {
       if (!append) $affichesDiv.html('<p>Aucun résultat trouvé.</p>');
       return;
     }
     data.forEach(film => {
-      const posterUrl = film.poster_path
-        ? `https://image.tmdb.org/t/p/w500${film.poster_path}`
-        : 'placeholder.jpg';
+      let posterUrl;
+      if (film.poster_path) {
+        if (film.poster_path.endsWith('.jpg') && !film.poster_path.startsWith('http')) {
+          posterUrl = `https://image.tmdb.org/t/p/w500${film.poster_path}`;
+        } else {
+          posterUrl = film.poster_path;
+        }
+      } else {
+        posterUrl = 'placeholder.jpg';
+      }
+
       const title = film.title || 'Titre inconnu';
       const $affiche = $(`
         <div class="affiche">
@@ -40,9 +49,6 @@ $(document).ready(function () {
         </div>
       `);
       $affiche.find('img').on('click', function () {
-        window.location.href = `movie.html?id=${film.id}`;
-      });
-      $affiche.find('button').on('click', function () {
         window.location.href = `movie.html?id=${film.id}`;
       });
       $affichesDiv.append($affiche);
@@ -69,6 +75,5 @@ $(document).ready(function () {
     rechercheActuel = $(this).val(); 
     pageActuel = 1; 
     await chargerFilm(rechercheActuel); 
-
   });
 });
