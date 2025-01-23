@@ -14,11 +14,11 @@ Installation
 
 Clonez ce dépôt :
 
-git clone https://github.com/votre-utilisateur/cinema-des-copains.git
+git clone https://github.com/votre-utilisateur/Cinema-des-copains.git
 
 Accédez au répertoire du projet :
 
-cd cinema-des-copains
+cd Cinema-des-copains
 
 Modifiez le fichier cle-api.js dans le répertoire main/asset avec le contenu suivant :
 
