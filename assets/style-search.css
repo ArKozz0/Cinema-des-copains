@@ -1,4 +1,4 @@
-/* Header */ 
+
 
 header {
     display: flex;
@@ -35,7 +35,6 @@ header {
   margin-left: 10px;
 }
 
-/* Body */ 
 
 body {
     background-color: #353535;
@@ -43,7 +42,7 @@ body {
 
 .affiches {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);  /* 5 colonnes égales */
+  grid-template-columns: repeat(5, 1fr);  
   gap: 50px;
   margin-top: 50px;
   margin-left: 50px;

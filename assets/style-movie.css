@@ -54,17 +54,15 @@ body {
     color: #fff;
 }
 
-/* Détails du film */
 .movie-details {
     display: grid;
-    grid-template-columns: 1fr 3fr; /* 1 colonne pour le poster et 2 colonnes pour le titre et la description */
-    grid-gap: 10px; /* Espacement entre les colonnes */
+    grid-template-columns: 1fr 3fr; 
+    grid-gap: 10px; 
     color: #fff;
     margin-top: -700px;
     margin-left: 300px;
 }
 
-/* Première colonne - Poster, Date et Note */
 .left-column {
     display: flex;
     flex-direction: column;
@@ -91,7 +89,6 @@ body {
     font-size: 1.1em;
 }
 
-/* Deuxième colonne - Titre et Description */
 .right-column {
     margin-top: 80px;
     display: flex;
@@ -116,8 +113,8 @@ body {
 .actors {
     margin-top: 50px;
     margin-left: 100px;
-    display: block; /* Affiche les acteurs sous forme de tableau */
-    width: auto; /* Laisse le tableau occuper toute la largeur disponible */
+    display: block; 
+    width: auto; 
 }
 
 table {
@@ -151,7 +148,6 @@ td {
     border-radius: 5px;
     margin-left: 10px;
 }
-/* Lien */
 a {
     color: rgb(255, 255, 255);
     text-decoration: none;
