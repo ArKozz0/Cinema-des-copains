@@ -1,24 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Details du Film</title>
 </head>
 <body>
-    <div id="movie-trailer">
-        <iframe id="trailer-video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+    <nav class="navigation">
+        <div id="movie-backdrop" class="movie-backdrop"></div>
+        <a href="./index.html" id="logo-a">
+            <img class="logo" alt="Logo du site web" src="./assets/images/logo-sombre.png">
+        </a>       
+        <a href="./search.html" class="recherche">
+            <img id="icon-recherche" alt="icon pour effectuer une recherche" src="./assets/images/recherche-blanc.png">
+            <p id="texte-recherhe">Recherche</p>
+        </a>   
+    </nav>
     <div class="movie-details">
-        <h1 id="movie-title"></h1>
-        <img id="movie-poster" src="" alt="Affiche du film" />
-        <p id="movie-overview"></p>
-        <p id="movie-release-date"></p>
-        <p id="movie-rating"></p>
+        <div class="left-column">
+            <img id="movie-poster" src="" alt="Affiche du film" />
+            <p id="movie-release-date"></p>
+            <p id="movie-rating"></p>
+        </div>
+        <div class="right-column">
+            <h1 id="movie-title"></h1>
+            <p id="movie-overview"></p>
+        </div>
     </div>
+    <h3 id="name-acteur">Acteurs :</h3>
+    <div class="actors"></div>
 </body>
 <footer>
     <link rel="stylesheet" href="./assets/style-movie.css">
+    <script src="/assets/cle-api.js"></script>
     <script src="./assets/script-movie.js" ></script>
     <script src="main.js" ></script>
 </footer>
