@@ -1,4 +1,4 @@
-import { apiKey } from './cle-api.js';
+import { apiKey } from '../assets/cle-api';
 
 
 $(document).ready(function () {
