@@ -1,4 +1,4 @@
-const apiKey = "3000a7d408341cdad51e422e585eb32d";  
+import { apiKey } from './cle-api.js';
 
 document.addEventListener("DOMContentLoaded", () => {
     const urlParams = new URLSearchParams(window.location.search);

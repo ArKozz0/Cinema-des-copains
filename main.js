@@ -1,7 +1,6 @@
-
+import { apiKey } from './assets/cle-api.js';
 
 document.addEventListener("DOMContentLoaded", () => {
-    const apiKey = "3000a7d408341cdad51e422e585eb32d";  
     const filmsList = document.getElementById("films-list");  
     
     const fetchTendanceFilms = async () => {
@@ -21,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
                
                 const filmLink = document.createElement("a");
                 filmLink.href = `movie.html?id=${film.id}`;  
-                
                 filmLink.innerHTML = `
                     <img src="https://image.tmdb.org/t/p/w500${film.poster_path}" alt="${film.title}" class="film-poster">
                     <h4>${film.title}</h4>
