@@ -26,7 +26,7 @@ export const apiKey = "VOTRE_API_KEY";
 
 Remplacez VOTRE_API_KEY par votre clé personnelle de l'API TMDb ou demandez à noé ou robin une clé.
 
-Lancez le projet en ouvrant index.html dans votre navigateur.
+Lancez le projet en ouvrant index.html dans votre navigateur ou sur live server.
 
 Licence
 
