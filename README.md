@@ -12,7 +12,7 @@ Recherche : Une fonctionnalité de recherche qui quand vous recherchez un film v
 
 Installation
 
-Clonez ce dépôt :
+Faites un fork de ce dépot puis clonez le grâce à la commande :
 
 git clone https://github.com/votre-utilisateur/Cinema-des-copains.git
 
