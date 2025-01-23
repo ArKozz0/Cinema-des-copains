@@ -27,3 +27,7 @@ Lancez le projet en ouvrant index.html dans votre navigateur ou sur live server.
 Licence
 
 Ce projet est sous licence MIT. 
+
+Auteurs
+
+Noé Fourre et Robin Matelot
